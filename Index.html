@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rudra Industry | Samastipur</title>
+<style>
+    body { margin: 0; font-family: 'Segoe UI', Arial; background: #f0f2f5; }
+    header { background: #1a1a1a; color: white; text-align: center; padding: 30px; border-bottom: 4px solid #25D366; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; padding: 20px; }
+    .card { background: white; padding: 15px; border-radius: 12px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: 0.3s; }
+    .card:hover { transform: translateY(-5px); border: 1px solid #25D366; }
+    .card img { width: 100%; height: 180px; object-fit: contain; border-radius: 8px; background: #f9f9f9; }
+    .price { color: #2e7d32; font-size: 20px; font-weight: bold; margin: 10px 0; }
+    .specs { font-size: 14px; color: #555; margin-bottom: 15px; height: 50px; }
+    button { background: #25D366; color: white; border: none; padding: 12px 25px; border-radius: 6px; cursor: pointer; font-weight: bold; width: 100%; }
+    .contact { background: #1a1a1a; color: white; text-align: center; padding: 40px 20px; margin-top: 30px; }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Rudra Industry</h1>
+    <p>Premium Quality Cement Lock Bricks & Construction Materials</p>
+</header>
+
+<div class="grid">
+    <div class="card">
+        <img src="images/Brick 1.jpg" alt="Standard Lock Brick">
+        <h3>Type 1: Standard Lock Brick</h3>
+        <p class="specs">Size: 12x6x4 Inch | Use: Normal Walls</p>
+        <p class="price">₹13 / piece</p>
+        <button onclick="order('Type 1: Standard Lock Brick')">Order on WhatsApp</button>
+    </div>
+
+    <div class="card">
+        <img src="images/Brick 2.jpg" alt="Heavy Duty Lock Brick">
+        <h3>Type 2: Heavy Duty Brick</h3>
+        <p class="specs">Size: 12x6x6 Inch | Use: Petrol Pumps</p>
+        <p class="price">₹13 / piece</p>
+        <button onclick="order('Type 2: Heavy Duty Brick')">Order on WhatsApp</button>
+    </div>
+
+    <div class="card">
+        <img src="images/Brick 3.jpg" alt="Hollow Lock Brick">
+        <h3>Type 3: Hollow Lock Brick</h3>
+        <p class="specs">Lightweight & Cement Saving Design</p>
+        <p class="price">₹13 / piece</p>
+        <button onclick="order('Type 3: Hollow Lock Brick')">Order on WhatsApp</button>
+    </div>
+
+    <div class="card">
+        <img src="images/Brick 4.jpg" alt="Solid Lock Brick">
+        <h3>Type 4: Solid Lock Brick</h3>
+        <p class="specs">Maximum Strength | Best for Foundation</p>
+        <p class="price">₹13 / piece</p>
+        <button onclick="order('Type 4: Solid Lock Brick')">Order on WhatsApp</button>
+    </div>
+
+    <div class="card">
+        <img src="images/Brick 5.jpg" alt="Zig-Zag Lock Brick">
+        <h3>Type 5: Zig-Zag Brick</h3>
+        <p class="specs">Stylish Design for Parking Areas</p>
+        <p class="price">₹13 / piece</p>
+        <button onclick="order('Type 5: Zig-Zag Brick')">Order on WhatsApp</button>
+    </div>
+
+    <div class="card">
+        <img src="images/Brick 6.jpg" alt="Paver Lock Brick">
+        <h3>Type 6: Paver Lock Brick</h3>
+        <p class="specs">Heavy Duty for Roads & Petrol Pumps</p>
+        <p class="price">₹13 / piece</p>
+        <button onclick="order('Type 6: Paver Lock Brick')">Order on WhatsApp</button>
+    </div>
+</div>
+
+<div class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>📍 Musapur, Samastipur, Bihar</p>
+    <p>📞 +91 70047 93354</p>
+</div>
+
+<script>
+function order(productName){
+    let message = "Hello Rudra Industry, I am interested in " + productName;
+    window.open("https://wa.me/917004793354?text=" + encodeURIComponent(message));
+}
+</script>
+
+</body>
+</html>
